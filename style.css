@@ -1,0 +1,334 @@
+/* основые настройки */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #1d2f30;
+}
+
+/* создание шапки сайта */
+header {
+  left: -240px;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background-color: #1d2f30;
+}
+
+header img {
+  margin-left: 150px;
+}
+
+
+.nav__img {
+  border-radius: 100%;
+  width: 35px;
+  margin: 30px;
+  height: 30px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.navigator {
+  display: flex;
+  text-decoration: none;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 60px;
+}
+
+.navigator__ul {
+  margin-right: 30px;
+  padding-right: 10px;
+  list-style-type: none;
+  color: white;
+  width: 100%;
+  gap: 50px;
+}
+
+.navigator__ul li {
+  display: inline-block;
+  margin: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding-top: 20px;
+}
+
+.navigator__ul a {
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.a1:hover {
+  text-decoration: underline;
+}
+
+.a1:active {
+  color: black;
+}
+
+/* создание первой секции */
+section {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 550px;
+}
+
+.figure__img {
+  background-image: url(./img/zadnuifon1.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  height: 550px;
+  width: 100%;
+  gap: 0px;
+  opacity: 0.9;
+}
+
+.figure__figcaption h1 {
+  color: black;
+  margin-top: 175px;
+  text-align: left;
+  margin-left: 150px;
+  font-size: 60px;
+  padding-bottom: 15px;
+}
+
+.figure__figcaption p {
+  color: black;
+  margin-left: 150px;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.figure__figcaption h3 {
+  margin-left: 150px;
+  color: #eb9c00;
+  cursor: pointer;
+}
+
+/* создание второй секции */
+.section__2 {
+  display: flex;
+  margin-left: 100px;
+  margin-top: 100px;
+  height: 700px;
+}
+
+.blog {
+  margin-left: 150px;
+
+  margin: 50px;
+  border: 1px solid black;
+  word-break: break-all;
+  height: 493px;
+  width: 255px;
+}
+
+.blog img {
+  background-color: black;
+  width: 255px;
+  height: 143px;
+}
+
+.blog h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+}
+
+.blog p {
+  white-space: pre-line;
+  word-break: break-all;
+  width: 223px;
+  color: grey;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400px;
+  height: 168px;
+}
+
+.blog button {
+  border: 1px solid rgba(186, 226, 73, 1);
+  background-color: rgba(29, 47, 48, 1);
+  color: rgba(186, 226, 73, 1);
+  padding: 11px;
+  width: 145px;
+  height: 45px;
+  cursor: pointer;
+  transform: translate(10px, 80px);
+}
+
+.list {
+  transform: translate(-750px, 600px);
+}
+
+/* создание третей секции */
+.section__3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  height: 700px;
+}
+
+.section__3 h2 {
+  width: 655px;
+  height: 48px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.section__3 img {
+  margin-top: 130px;
+  width: 825px;
+  height: 493px;
+  transform: translate(-600px, 10px);
+}
+
+.boklist {
+  margin-top: 130px;
+  transform: translate(-400px, 10px);
+  width: 325px;
+  height: 493px;
+  background-color: rgba(186, 226, 73, 1);
+}
+
+.boklist h3 {
+  margin: 10px;
+  text-align: center;
+  color: black;
+  line-height: 36px;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.boklist p {
+  margin-left: 30px;
+  text-align: center;
+  white-space: pre-line;
+  color: rgba(80, 104, 41, 1);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700px;
+  width: 243px;
+  height: 342px;
+}
+
+/* создание четверой секции */
+.section__4 {
+  display: block;
+  margin-top: 100px;
+  height: 493px;
+  width: 1920px;
+  background-image: url(./img/fon2.png);
+  background-size: 100% 100%;
+  background-position: 100% 100%;
+  object-fit: cover;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.section__4 h2 {
+  color: black;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 48px;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 70px;
+}
+
+.section__4 p {
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 15px;
+  font-size: 20px;
+  width: 825px;
+  height: 95px;
+}
+
+.section__4 form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.forma input {
+  margin-top: 15px;
+  width: 350px;
+  height: 45px;
+  background-color: white;
+}
+
+.forma label {
+  margin-left: 20px;
+  background-color: white;
+}
+
+.forma button {
+  margin-top: 15px;
+  background-color: rgba(186, 226, 73, 1);
+  width: 145px;
+  height: 45px;
+  cursor: pointer;
+}
+
+/* создание футера */
+
+footer {
+  display: block;
+  width: 1920px;
+  height: 79px;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: black;
+}
+
+.footer__foto {
+  width: 1920px;
+  height: 60px;
+  background-color: black;
+}
+
+.footer__foto img {
+  margin-top: 20px;
+  width: 186px;
+  height: 24px;
+}
+
+footer h4 {
+  text-align: center;
+}
